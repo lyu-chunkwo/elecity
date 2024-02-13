@@ -10,7 +10,11 @@
   --bg-gradient: linear-gradient(20deg, #142840 0%, #1a467c 100%);
   --box-shadow: 0 0 20px 0 rgba(67, 127, 200, 0.15);
   --border: 1px solid #437fc8;
-  border-radius: 5px;
+  --br5: 5px;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 }
 // ! Использование CSS переменных
 .link__example {
