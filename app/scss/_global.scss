@@ -11,8 +11,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  @extend %font-name-400;
-  color: $text;
+  @extend %montserrat-400;
+  color: var(--text);
   font-size: 16px;
   line-height: 1.5;
   min-height: 100%;
@@ -29,16 +29,16 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 button {
+  cursor: pointer;
   &:active,
   &:focus {
     outline: transparent;
-    cursor: pointer;
   }
 }
 
@@ -68,10 +68,10 @@ textarea {
   }
 
   &:hover {
-    border: 1px solid yellow;
+    border: 1px solid #9cc0f9;
   }
 
   &:active {
-    border: 1px solid yellowgreen;
+    border: 1px solid #9cc0f9;
   }
 }

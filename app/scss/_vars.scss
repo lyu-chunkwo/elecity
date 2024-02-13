@@ -1,15 +1,20 @@
-$accent: #ed1c24;
-$bg: #1c1c1c;
-$text: #4b4b4b;
-
 // ! Объявление CSS переменных
 :root {
-  --accent: #ed1c24;
-  --text: #4b4b4b;
+  --accent-red: #fc443b;
+  --accent-blue: #437fc8;
+  --accent-green: #55bb9f;
+  --light-blue: #7fb1ed;
+  --text: #1e1e1e;
+  --none: #999999;
+  --bg: #142840;
+  --bg-gradient: linear-gradient(20deg, #142840 0%, #1a467c 100%);
+  --box-shadow: 0 0 20px 0 rgba(67, 127, 200, 0.15);
+  --border: 1px solid #437fc8;
+  border-radius: 5px;
 }
 // ! Использование CSS переменных
 .link__example {
-  color: var(--accent);
+  color: var(--accent-red);
 }
 
 // ! Миксин для fancybox(video-popup), предотвращает ошибку gulp
@@ -58,9 +63,40 @@ $text: #4b4b4b;
 }
 
 // ! Шаблон для Шрифта
-%font-name-400 {
-  font-family: "font-name", sans-serif;
+
+%montserrat-300 {
+  font-family: "Montserrat-Light", sans-serif;
+  font-weight: 300;
+}
+
+%montserrat-400 {
+  font-family: "Montserrat-Regular", sans-serif;
   font-weight: 400;
+}
+
+%montserrat-500 {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%montserrat-600 {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+%montserrat-700 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%grotesq-400 {
+  font-family: "BasisGrotesquePro-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%grotesq-500 {
+  font-family: "BasisGrotesquePro-Medium", sans-serif;
+  font-weight: 500;
 }
 // ! Использование шаблона
 // @extend %font-name-400;

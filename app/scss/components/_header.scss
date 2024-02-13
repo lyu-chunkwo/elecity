@@ -1,0 +1,254 @@
+.header {
+  margin-bottom: 20px;
+
+  &__top-wrap {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 17px;
+  }
+
+  &__top {
+    padding: 11px 0;
+  }
+
+  &__top-location {
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-image: url(../images/result/sprite/sprite.svg#location);
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+
+  &__top-menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__top-link {
+    color: var(--text);
+  }
+
+  &__top-private {
+    padding-left: 24px;
+    position: relative;
+    color: var(--text);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../images/result/sprite/sprite.svg#kabinet);
+    }
+  }
+
+  &__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+
+  &__center-menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__center-link {
+    color: #000;
+    transition: color 0.5s ease;
+    @extend %montserrat-500;
+
+    &:hover {
+      color: var(--accent-blue);
+    }
+  }
+
+  &__center-form {
+    max-width: 375px;
+    width: 100%;
+    display: flex;
+  }
+
+  &__center-input {
+    padding: 15px 23px;
+    width: 100%;
+    border: var(--border);
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+
+    &::placeholder {
+      color: #6e6e6e;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      border: var(--border);
+      border-right: none;
+    }
+  }
+
+  &__center-btn {
+    border: var(--border);
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+    background-color: transparent;
+    padding-right: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__center-contacts {
+    display: flex;
+    padding-top: 10px;
+  }
+
+  &__center-messengers {
+    margin-right: 10px;
+  }
+
+  &__center-messenger {
+    display: inline-block;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__center-phonebox {
+    span {
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+
+  &__center-phone {
+    display: block;
+    color: var(--text);
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  &__center-cart {
+    padding-left: 52px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../images/result/sprite/sprite.svg#cart);
+    }
+  }
+
+  &__center-quantity {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--accent-red);
+    border-radius: 50%;
+    padding-left: 6px;
+    color: #fff;
+    font-size: 11px;
+    left: -4px;
+    top: -3px;
+  }
+
+  &__center-cartlink {
+    display: block;
+    color: var(--text);
+    font-size: 14px;
+  }
+
+  &__center-cost {
+    font-size: 14px;
+    @extend %montserrat-500;
+  }
+
+  &__bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  &__bottom-allcategories {
+    display: flex;
+    align-items: center;
+    color: var(--accent-blue);
+    font-weight: 600;
+    transition:
+      color 0.5s,
+      background-color 0.5s ease;
+    padding: 14px 23px;
+    border-radius: 5px;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--accent-blue);
+
+      .header__bottom-svg {
+        stroke: #fff;
+      }
+    }
+  }
+
+  &__bottom-svg {
+    margin-right: 15px;
+    stroke: var(--accent-blue);
+    transition: stroke 0.5s ease;
+  }
+
+  &__bottom-menu {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__bottom-link {
+    color: #000;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: var(--accent-red);
+    }
+  }
+
+  &__bottom-sale {
+    color: var(--accent-red);
+    @extend %montserrat-500;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: var(--text);
+    }
+  }
+}
