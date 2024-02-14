@@ -138,6 +138,10 @@
     }
   }
 
+  &__center-svg {
+    fill: var(--accent-blue);
+  }
+
   &__center-phonebox {
     span {
       font-size: 12px;

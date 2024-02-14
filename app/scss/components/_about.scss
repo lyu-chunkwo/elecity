@@ -1,0 +1,77 @@
+.about {
+  margin-bottom: 60px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    margin-bottom: 55px;
+  }
+
+  &__text {
+    line-height: 1.56;
+  }
+
+  &__item-title {
+    font-weight: 600;
+    line-height: 1.56;
+  }
+
+  &__benefits-items {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  &__benefits-item {
+    max-width: 165px;
+    font-weight: 600;
+    padding-top: 75px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 73px;
+      height: 73px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url(../images/result/sprite/sprite.svg#polygon);
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 12px;
+      left: 49%;
+      transform: translateX(-50%);
+      background-image: url(../images/result/sprite/sprite.svg#experience);
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(2)::after {
+      background-image: url(../images/result/sprite/sprite.svg#exchange);
+      left: 50%;
+    }
+
+    &:nth-child(3)::after {
+      background-image: url(../images/result/sprite/sprite.svg#tools);
+      left: 49%;
+    }
+
+    &:nth-child(4)::after {
+      background-image: url(../images/result/sprite/sprite.svg#class);
+      left: 49%;
+    }
+
+    &:nth-child(5)::after {
+      background-image: url(../images/result/sprite/sprite.svg#medal);
+      left: 49%;
+    }
+  }
+}
